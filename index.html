@@ -8,11 +8,11 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
             background-color: #f4f4f4;
             text-align: center;
         }
@@ -25,10 +25,17 @@
             width: 100%;
             text-align: center;
         }
-        section {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             width: 80%;
             max-width: 700px;
-            margin: 20px;
+        }
+        section {
+            width: 100%;
+            margin: 20px 0;
             padding: 15px;
             border: 1px solid #ccc;
             background-color: white;
@@ -37,40 +44,46 @@
         h2 {
             color: #175473;
         }
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
 
     <div class="banner">CS-499 ePortfolio</div>
 
-    <section id="code-review">
-        <h2>Code Review</h2>
-        <p>Watch my Code Review here:</p>
-        <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/jbYDFOFDWj4" 
-            title="Code Review" frameborder="0" allowfullscreen>
-        </iframe>
-    </section>
+    <div class="container">
+        <section id="code-review">
+            <h2>Code Review</h2>
+            <p>Watch my Code Review here:</p>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/jbYDFOFDWj4"
+                title="Code Review" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
 
-    <section id="enhancement-1">
-        <h2>Enhancement 1</h2>
-        <!-- Add details about Enhancement 1 here -->
-    </section>
+        <section id="enhancement-1">
+            <h2>Enhancement 1</h2>
+            <!-- Add details about Enhancement 1 here -->
+        </section>
 
-    <section id="enhancement-2">
-        <h2>Enhancement 2</h2>
-        <!-- Add details about Enhancement 2 here -->
-    </section>
+        <section id="enhancement-2">
+            <h2>Enhancement 2</h2>
+            <!-- Add details about Enhancement 2 here -->
+        </section>
 
-    <section id="enhancement-3">
-        <h2>Enhancement 3</h2>
-        <!-- Add details about Enhancement 3 here -->
-    </section>
+        <section id="enhancement-3">
+            <h2>Enhancement 3</h2>
+            <!-- Add details about Enhancement 3 here -->
+        </section>
 
-    <section id="professional-self-assessment">
-        <h2>Professional Self Assessment</h2>
-        <!-- Add your Professional Self Assessment here -->
-    </section>
+        <section id="professional-self-assessment">
+            <h2>Professional Self Assessment</h2>
+            <!-- Add your Professional Self Assessment here -->
+        </section>
+    </div>
 
 </body>
 </html>
