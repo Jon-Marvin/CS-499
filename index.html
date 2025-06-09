@@ -21,7 +21,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
+            text-align: justify;
             width: 100%;
             max-width: 900px;
         }
@@ -92,7 +92,10 @@
         <section id="enhancement-2">
             <h2>Enhancement 2</h2>
             <p>
-                <!-- To be added -->
+                The artifact I decided to enhance for the Algorithms and Data Structure portion of the project was also the CS-370 Mobile Architect and Programming Inventory app. There were certain aspects of the project that I was unhappy with when I turned it in. I had completed all of the requirements before submission, but a few things that I had run out of time on stuck out in my head.
+	For this enhancement, I wanted to cover a few of the small things that I had missed. First, I wanted to add comments in each script. It is best practice to include comments for an easier read, and I had left them out in the original iteration. I wanted to loop back at the end to add them, but by the time I was finished, I had just wanted to turn in the project. This Capstone project gave me a chance to correct that oversight. The other major issue that I had left out of the original iteration was the update function. Inventory for companies can both increase and decrease, and having items recur multiple times in the app would be inefficient and, frankly, ugly. I decided to add an update button beside items in the inventory so quantities could be changed rather than having to delete and recreate an entry.
+	When making this enhancement, I was hoping to cover course outcomes one and three. For outcome one, adding comments allows coworkers or teams to QA and update each other’s work. Rather than having only one person who knows how to change the code, anyone can look at the comments and find what they need to make the necessary changes. Outcome three was completed by solving the problem that I had created originally with no update method. Though the function was in the script, it had not been called anywhere and thus could not be used. By calling the update function in InventoryAdapter.kt, I was able to add the button and a dialog box to change the quantities of items. This feature is definitely an improvement over deleting and recreating entries to change quantities.
+	The main thing I learned in this enhancement is that adding comments to finished projects is difficult. Due to my inexperience with Kotlin, and Java in general, I had to fully reread each block of code to add the comments when I could have just added them as I created the project in the first place. Getting the update function working took longer than I had anticipated. I had to run through it multiple times before I was able to get the button to respond. After about an hour of trial and error and the app crashing continuously, the button responded only for the update dialog box to crash the app. I got it to a working state, and for that, I am grateful.
             </p>
             
         </section>
@@ -100,7 +103,10 @@
         <section id="enhancement-3">
             <h2>Enhancement 3</h2>
             <p>
-                <!-- To be added -->
+                For the final enhancement, I continued my work in the CS-370 Mobile Architect and Programming Inventory app. I had some trouble deciding on how to enhance the database, but I decided not to go in the original direction that I had planned. The original plan was to create an option to “add many” so users could fill the inventory with a few less clicks, but that has less to do with databases and more to do with user interface quality of life.
+	The database enhancement that I decided to make was hashing the saved passwords for better security and stronger database storage. I also updated the look of the app and the inventory screen with a more appealing color scheme and a card-based inventory system, but the main focus of this enhancement is the database. Rather than saving the passwords in the database and moving on, I decided it would be best to secure passwords in case of an attack. That way, hackers would have a more difficult time stealing information from the app database. Though personal information was not added to the app, inventory can be sensitive, so hashing the passwords was the best option. 
+	As mentioned in the above paragraph, a big focus of this enhancement was security. The fifth course outcome was one that I was unsure if I was going to touch on, so I was happy to come up with the idea of hashing passwords. The original plan for the final enhancement was covering course outcomes two and three, and with the work that was done, I feel they were also brought into this enhancement, but outcome five was the most prevalent. Now, when logging in, the input password is hashed and compared to the saved password in the database. I had a lot of fun with this enhancement, especially when trying to find a style that I liked. 
+    Hashing passwords is something that I learned about in CS-305 Software Security, so I used the same SHA-256 hashing that I had used in that class. Figuring out how to apply it to Kotlin took some time and a lot of reading. Stack overflow was my best friend during this enhancement.
             </p>
             
         </section>
